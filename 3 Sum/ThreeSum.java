@@ -17,13 +17,13 @@ public class ThreeSum {
                 int sum = nums[i] + nums[j] + nums[k];
                 // Add in arraylist if some is 0
                 if (sum == 0) l_o.add(Arrays.asList(nums[i], nums[j], nums[k]));
-                // Increment j until next number is same
+                // Increment j til next number is same
                 if (sum <= 0) while (nums[j] == nums[++j] && j < k) ;
-                // Increment k until next number is same
+                // Increment k til next number is same
                 if (sum >= 0) while (nums[k] == nums[--k] && j < k) ;
 
             }
-            //Increment i until next number is same
+            //Increment i til next number is same
             while (nums[i] == nums[++i] && i < nums.length - 2) ;
         }
 
